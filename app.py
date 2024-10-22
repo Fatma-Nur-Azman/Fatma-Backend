@@ -1,7 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # CORS'u import edin
 import tweepy
 
 app = Flask(__name__)
+CORS(app)  # CORS'u etkinleştirin
+
 
 # Twitter API anahtarları (bunları kendi aldığınız anahtarlarla değiştirin)
 API_KEY = "Eo6B0jHAoISpdhyEnS3UVr6WU"
